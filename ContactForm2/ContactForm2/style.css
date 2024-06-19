@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: rgb(217, 5, 217);
+  height: 100%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.container {
+  padding: 40px;
+}
+.left-side-container {
+  background-color: rgb(86, 5, 132);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "left-side-empty left-side-cotainer ";
+  grid-template-columns: 0.5fr 1fr;
+  height: 100%;
+}
+
+.left-side-container {
+  display: grid;
+  grid-template-areas:
+    "title-left title-left title-left right-side-container"
+    "email-left email-left email-left right-side-container"
+    "phone-left phone-left phone-left right-side-container"
+    "address-left address-left address-left right-side-container"
+    "icon-facebook icon-instagram icon-twiter right-side-container";
+  grid-template-columns: 0.1fr 0.15fr 0.3fr 0.75fr;
+  grid-template-rows: 0.2fr 0.5fr 0.5fr 3fr 0.1fr;
+  height: 50%;
+}
+
+.title-left {
+  grid-area: title-left;
+}
+.phone-left {
+  grid-area: phone-left;
+}
+.email-left {
+  grid-area: email-left;
+}
+.address-left {
+  grid-area: address-left;
+}
+.icon-facebook {
+  grid-area: icon-facebook;
+}
+.icon-instagram {
+  grid-area: icon-instagram;
+}
+.icon-twiter {
+  grid-area: icon-twiter;
+}
+
+.right-side-container {
+  grid-area: right-side-container;
+}
+
+.title-left {
+  color: white;
+}
+
+.title-left span {
+  color: rgb(222, 16, 198);
+}
+.phone-left {
+  height: 30px;
+  width: 150px;
+  border: 1px solid rgb(222, 16, 198);
+  border-radius: 6px;
+  background-color: rgb(222, 16, 198, 0.3);
+}
+.phone-left a {
+  color: white;
+  text-decoration: none;
+}
+
+.phone-left i,
+.email-left i,
+.address-left i {
+  color: rgb(222, 16, 198);
+}
+
+.email-left a {
+  color: white;
+  text-decoration: none;
+}
+
+.address-left {
+  color: white;
+}
+
+.icon-facebook,
+.icon-twiter {
+  color: white;
+}
+
+.icon-instagram {
+  color: white;
+  background-color: rgba(222, 16, 198, 0.5);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side-container {
+  background-color: white;
+  height: 100%;
+  border-radius: 6px;
+  padding: 30px 0px 0px 30px;
+}
+
+.right-side-container {
+  display: grid;
+  grid-template-areas:
+    "title-right title-right title-right"
+    "ui-ux-design web-design graphic-design"
+    "design-system other other"
+    "name-right name-right name-right"
+    "email-right email-right email-right"
+    "message-right message-right message-right"
+    "send-messsage-rigth send-messsage-rigth send-messsage-rigth";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.75fr 0.75fr 0.75fr 1fr;
+}
+
+.title-right {
+  grid-area: title-right;
+}
+.ui-ux-design {
+  grid-area: ui-ux-design;
+}
+.web-design {
+  grid-area: web-design;
+}
+.graphic-design {
+  grid-area: graphic-design;
+}
+.design-system {
+  grid-area: design-system;
+}
+
+.other {
+  grid-area: other;
+}
+
+.name-right {
+  grid-area: name-right;
+}
+
+.email-right {
+  grid-area: email-right;
+}
+
+.message-right {
+  grid-area: message-right;
+}
+
+.send-messsage-rigth {
+  grid-area: send-messsage-rigth;
+}
+
+.ui-ux-design.selected,
+.web-design.selected,
+.graphic-design.selected,
+.design-system.selected,
+.other.selected {
+  background-color: rgb(222, 16, 198);
+  color: white;
+  padding: 4px;
+  border-radius: 6px;
+}
+.ui-ux-design,
+.web-design,
+.design-system,
+.graphic-design,
+.other {
+  color: rgb(219, 215, 215);
+  border: 2px solid rgb(239, 232, 232);
+  border-radius: 3px;
+  margin: 2px;
+  padding: 3px;
+  width: 110px;
+}
+.other {
+  width: 50px;
+}
+
+.name-right input,
+.email-right input,
+.message-right input {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(203, 150, 205);
+  width: 350px;
+  outline: none;
+}
+.name-right input:focus,
+.email-right input:focus,
+.message-right input:focus {
+  border-bottom: 3px solid rgb(222, 16, 198);
+}
+.send-messsage-rigth button {
+  background-color: rgb(222, 16, 198);
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.left-side-empty h1 {
+  color: white;
+}
+.left-side-empty h3 {
+  color: white;
+}
